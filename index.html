@@ -7,12 +7,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/x-icon" href="assets/AGO-Seal_2020.png">
 	<style>
 		body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 		body {font-size:16px;}
 		.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 		.w3-half img:hover{opacity:1}
+		
+		.fa {
+		  padding: 7px;
+		  font-size: 30px;
+		  width: 40px;
+		  height: 40px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 2px 2px;
+		  border-radius: 50%;
+		}
+		.fa:hover {
+		  opacity: 0.7;
+		}
 	</style>
 	
 	<script>
@@ -36,8 +51,9 @@
 	<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
 	<div class="w3-container">
 	<img src="assets/AGO-Seal_2020.png" style="width:50%;margin-left:25%;margin-top:20px" alt="AGO Seal">
-		<h3 class="w3-padding-32"><b>Central North Carolina Chapter</h3>
+		<h3 class="w3-padding-16"><b>Central North Carolina Chapter</h3>
 	</div>
+	
 	<div class="w3-bar-block">
 		<a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
 		<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a> 
@@ -47,7 +63,7 @@
 		<a href="#scholarship" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Scholarship</a>
 		<a href="#join" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Join</a>
 		<button class="w3-button w3-block w3-left-align w3-hover-white" onclick="accordion()">
-			Related Links <i class="fa fa-caret-down">▼</i>
+			Related Links <i class="fa fa-caret-down"></i>
 		</button>
 		<div id="accordion" class="w3-hide w3-white w3-card">
 			<a href="http://agohq.org/" class="w3-bar-item w3-button">National AGO Website</a>
@@ -58,6 +74,8 @@
 		</div>
 		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
 	</div>
+	<br>
+	<a href="https://www.facebook.com/cnccago" class="fa fa-facebook" style="background:#3B5998;color:white"></a>
 </nav>
 
 <!-- Top menu on small screens -->
@@ -124,10 +142,10 @@
 		<p>The vision of the American Guild of Organists is to engage, support, and uplift every organist.</p>
 		<p>We achieve this by:
 		<ul>
-		<li>Encouraging excellence through education.</li>
-		<li>Providing fellowship and mutual support for our members.</li>
-		<li>Promoting the organ in both its traditional and evolving roles.</li>
-		<li>Engaging broader audiences with organ music.</li>
+			<li>Encouraging excellence through education.</li>
+			<li>Providing fellowship and mutual support for our members.</li>
+			<li>Promoting the organ in both its traditional and evolving roles.</li>
+			<li>Engaging broader audiences with organ music.</li>
 		</ul>
 		</p>
 	</div>
@@ -136,12 +154,29 @@
 	<div class="w3-container" id="upcoming" style="margin-top:75px">
 		<h1 class="w3-xxxlarge w3-text-red"><b>Upcoming Events</b></h1>
 		<hr style="width:50px;border:5px solid red" class="w3-round">
-		<p>The best team in the world.</p>
-		<p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-		dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-		incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		</p>
-		<p><b>Our designers are thoughtfully chosen</b>:</p>
+		<p>There are no upcoming events.</p>
+		
+		<!-- EVENT TEMPLATE
+		<div class="w3-card w3-light-grey w3-row" style="margin-top:25px">
+			
+			<div class="w3-container w3-quarter" style="margin-top:20px;margin-bottom:20px">
+				<img src="assets/wpumc.jpg" alt="Description" style="width:100%;display:table-cell">
+			</div>
+			
+			<div class="w3-container w3-threequarter">
+				<h2 class="w3-text-grey w3-xxlarge">
+					Event Title
+				</h2>
+				<p class="w3-text-grey"><b>MONTH DD, YYYY @ time</b></p>
+				<hr style="width:50px;border:3px solid grey" class="w3-round">
+				<p>
+					Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					<br>
+					<a href="http://google.com/">Link Text</a>
+				</p>
+			</div>
+		</div>
+		-->
 	</div>
 	
 	<!-- Scholarship -->
@@ -211,7 +246,8 @@
 		</p>
 	</div>
 	
-	<!-- Packages / Pricing Tables -->
+	<!-- Packages / Pricing Tables Template -->
+	<!--
 	<div class="w3-container" id="packages" style="margin-top:75px">
 		<h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
 		<hr style="width:50px;border:5px solid red" class="w3-round">
@@ -255,28 +291,28 @@
 			</ul>
 		</div>
 	</div>
-	
+	-->
 	<!-- Contact -->
 	<div class="w3-container" id="contact" style="margin-top:75px">
-		<h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+		<h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
 		<hr style="width:50px;border:5px solid red" class="w3-round">
-		<p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-		<form action="/action_page.php" target="_blank">
-			<div class="w3-section">
-				<label>Name</label>
-				<input class="w3-input w3-border" type="text" name="Name" required>
-			</div>
-			<div class="w3-section">
-				<label>Email</label>
-				<input class="w3-input w3-border" type="text" name="Email" required>
-			</div>
-			<div class="w3-section">
-				<label>Message</label>
-				<input class="w3-input w3-border" type="text" name="Message" required>
-			</div>
-			<button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-		</form>  
-	</div>
+		<p>The current dean of the chapter is Dr. Mark Andersen.</p>
+    <form action="mailto:emarka@mac.com" method="post" enctype="text/plain">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
 
 <!-- End page content -->
 </div>
